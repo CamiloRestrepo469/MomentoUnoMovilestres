@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momento uno Moviles tres</title>
+</head>
+<body class="container">
+    <header>
+        <!-- Se  dispone  de  un menú  para el  restaurante“Muerte Lenta” y el negocio dispone delossiguientesplatoscon su respectivo
+             valor:PlatoValor
+            Hamburguesa10000
+            Perros8000S
+            alchipapas6000
+            Chorizos7000-
+            El  restaurante dispone  de  mesas  para  atender  a  grupos  de  personas  y  dispone  de meseros para recibir el pedido de cada persona.
+            -El programa debe solicitar el número de personas y debe preguntar a cada persona que plato desea comer
+            El programa muestra el valor total de la cuenta con las siguientes restricciones:
+            -SI el total de la compra supera los 20000 se realizaun descuento del 10% sobre el total de la compra y se muestra un mensaje donde se muestra al usuario que se le realizó un descuento por compras superiores a 20000pesos-
+            Se le pregunta al usuario si desea incluir la propina, de ser así se le agrega un 10% al valor total de la compra, de lo contrario se muestra el total sin aumento.
+            -Si  se  piden  dos  o  más  platos  iguales  se  realiza  un  descuento  adicional  de  5% 
+             (punto opcional y se compensa con 0.5 de más sobre el valor del punto)El programa termina solo si el usuario lo desea. -->
+            <div class="container">
+
+                <form action="">
+                <h1>Muerte lenta</h1>
+                <br><br>
+                </form>
+               
+            </div>
+            
+    </header>
+    <script>
+
+        
+          
+        // let solicitud=prompt("desea ingesar al restaurante Muerte lenta si o no   ")  
+        let solicitud="si" 
+        let numeroClientes=prompt("numero de cientes que desean ingresar ")
+
+        let Hamburguesa=10000
+        let Perros=8000
+        let Salchipapas=6000
+        let Chorizos=7000
+        let compra=20000
+        let propinas=(10/100)
+        let descuento=1.10
+        let valorventa=0
+        
+        // contador
+        let contadorHamburguesa=0
+        let contadorPerros=0
+        let contadorSalchipapas=0
+        let contadorChorizos=0
+        
+        let contadorpropinas=0
+        let contadorcompra=0
+        
+       
+        // motodo para 
+             for(let i=0;i<numeroClientes;i++){
+            
+            let platos=prompt("cual es plato que sea pedir Hamburguesa,Perros,Salchipapas,Chorizos  ")
+            if(platos=="Hamburguesa"){
+                let pedidosHamburguesa=prompt("cuantas Hamburguesa desea llevar   ")
+                contadorHamburguesa=pedidosHamburguesa*Hamburguesa
+            }
+            if(platos=="Perros"){
+                let pedidosPerros=prompt("cuantas Perros desea llevar   ")
+                contadorPerros=pedidosPerros*Perros
+            }
+            if(platos=="Salchipapas"){
+                let pedidosSalchipapas=prompt("cuantas Salchipapas desea llevar  ")
+                contadorSalchipapas=pedidosSalchipapas*Salchipapas
+            }
+            if(platos=="Chorizos"){
+                let pedidosChorizos=prompt("cuantas Chorizos desea llevar  ")
+                contadorChorizos=pedidosChorizos*Chorizos
+            }
+            if(propinas=="si"){
+                let pedidosPropina=prompt("desea incluir propina si o no ?  ")
+                contadorproponas=pedidosPropina+proponas
+                
+            }
+
+
+            totalventas=contadorHamburguesa+contadorPerros+contadorSalchipapas+contadorChorizos*propinas
+            if(valorventa==20000){
+                totalventas=(valorventa*10/100)
+            }
+
+            
+           
+
+           }
+
+           
+       
+        document.write("el total de las Hamburguesa es   "+ contadorHamburguesa+'<br>');
+        document.write("  el total de la Perros es  "+ contadorPerros    +'<br>');
+        document.write("  el total de la Salchipapas es  "+ contadorSalchipapas  +'<br>');
+        document.write("  el total de la Chorizos es   "+ contadorChorizos    +'<br>');
+        document.write("  el total de la valor ventas es   "+ valorventa    +'<br>');
+        document.write("     ventas es   "+  totalventas    +'<br>');
+
+            
+            
+
+
+
+      
+    </script>
+</body>
+</html>
